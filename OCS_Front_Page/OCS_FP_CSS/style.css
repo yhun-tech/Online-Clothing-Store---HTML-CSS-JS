@@ -1,0 +1,377 @@
+:root{
+
+    /* WHITES */
+   --pure_white-ff: #fff;
+   --main-white-ed:#ede8f5;
+
+   --gray_1--:gray;
+   --color-jk-dark:#212A31;
+   --color-jk-dgray:#f6fbff;
+   --blue-white:#d0e3ec;
+ 
+   --color-dark-variant: #2c2f31;
+   --color-dark-shadow: rgb(53,53,53);
+   --color-dark-shadow-alpha: rgba(53,53,53,0.5);
+   --color-dark-blue:#1f2833;
+
+   /* LUSION */
+   --lusion-dark-a:#141619;
+   --lusion-dark-b:#2c2e3a;
+
+   /* MOON PHASES */
+   --moon-phases-a:#212a31;
+   --moon-phases-b:#2e3944;
+   --moon-phases-c:#748d92;
+
+   /* HELLO */
+   --hello-a:#0b0c10;
+   --hello-b:#000428;
+
+
+   /* ISOLATED BLUE */
+   --isolated-blue:#274d60;
+   --isolated-orange:#f1916d;
+
+    
+    /* PALLETE 1 */
+    --thistle-p1-cd:#cdb4db;
+    --fairy-tale-p1-ffc:#ffc8dd;
+    --carnation-pink-p1-ffa:#ffafcc;
+    --uranian-blue-p1-bd:#bd30fe;
+    --light-sky-blue-p1-a2:#a2d2ff;
+     
+    /* PALLETE 2 */
+    --fairy-green-p2-c6:#c6fad2;
+    --foam-purple-p2-dd:#dd9bcf;
+    --white-in-p2-f6:#f6ffee;
+    --danger-in-p2-f4:#f48882;
+    --most-pink-p2-fad:#fad2cc;
+
+    /* DARK PALLETE */
+
+    --dark-blue-drk-p3-0d:#0d1e4c;
+    --dark-blue-b-drk-p3-0b:#0b1b32;
+    --mid-dark-bluue-drk-p3-26:#264143;
+
+
+      /* SIGNS */
+      --color-danger: #ff7782;
+      --color-success_a: #41f153;
+      --color-success_b: #64e4b9;
+      --color-warning: #ffbb55;
+
+
+      
+    /* BORDER RADIUS */
+    --border-radius_5--:5px;
+    --border-radius_8--:8px;
+    --border-radius_10--:10px;
+    --border-radius_15--:15px;
+    --border-radius_20--:20px;
+    --border-radius_30--:30px;
+
+    --border-radius_circle--:50%;
+  
+
+
+}
+
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../../Fonts/Fonts/Quicksand/static/Quicksand-Regular.ttf');
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../../Fonts/Fonts/Raleway/static/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto_Mono';
+    src: url('../../Fonts/Fonts/Roboto_Mono/static/RobotoMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Parkisans';
+    src: url('../../Fonts/Fonts/Parkinsans/static/Parkinsans-Light.ttf');
+}
+
+*{
+    font-family: 'Parkisans';
+
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main_wrapper{
+    display: grid;
+    grid-template-columns: 5.5fr 4.5fr;
+    grid-template-rows: 8vh 92vh 100vh 30vh;
+    background-color: var(--white-in-p2-f6);
+    width: 100%;
+    height: 100vh;
+}
+
+.backdrop_wrapper{
+   display: grid;
+   grid-template-columns: 5.5fr 4.5fr;
+   grid-template-rows: 8vh 92vh 100vh 30vh;
+   height: 100vh;
+   width: 100%;
+   grid-area: 1 / 1 / 5 / 3;
+  
+   background:linear-gradient(to bottom,var(--blue-white),var(--white-in-p2-f6),var(--white-in-p2-f6));
+   
+}
+
+
+.frontpage_wrapper{
+    display: grid;
+    grid-template-columns: 5.5fr 4.5fr;
+    grid-template-rows: 8vh 92vh 100vh 30vh;
+    height: 100vh;
+    width: 100%;
+
+    grid-area: 1 / 1 / 5 / 3;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+  
+}
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+    }
+
+        .container.header{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            grid-area: 1 / 1 / 1 / 3 ;
+         
+        }
+
+            #main_logo{
+                margin-left: 2rem;
+            }
+
+            .h_button_div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row-reverse;
+                margin-right: 1rem;
+            }
+            
+            .h_button_links{
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                margin-right: 2rem;
+                cursor: pointer;
+                color: var(--moon-phases-b);
+            }
+
+            .h_button_links::after{
+                position: absolute;
+                content: '';
+                height: 2px;
+                width: 100%;
+                bottom: -1px;
+                left: 0;
+                transform: scale(0);
+                transform-origin: left;
+                transition: 0.5s;
+                background-color: var(--moon-phases-c);
+
+            }
+
+            
+            .h_button_links:hover::after{
+                transform: scaleX(1);
+            }
+
+                #login-link{
+                    text-decoration: none;
+                    margin-right: 1rem;
+                    cursor: pointer;
+                    padding: 0.3rem 0.8rem;
+                    border-radius: var(--border-radius_8--);
+                    color: var(--white-in-p2-f6);
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    background-color: var(--carnation-pink-p1-ffa);
+                }
+
+       
+
+
+        .container.hero{
+                display: grid;
+                flex-direction: column;
+                grid-template-columns: 1fr 8fr 1fr;
+                grid-template-rows:1fr;
+                grid-area: 2 / 1 / 3 / 2 ;
+            
+                
+        }
+
+            .text_tag_div{
+               
+                display: flex;
+                align-items: start;
+                justify-content: center;
+                flex-direction: column;
+                grid-area: 1 / 2 / 1 /2;
+                width: 100%;
+                height: 100%;
+              
+            }
+
+    
+              .hero_tag_lbl{
+                color:var(--moon-phases-b);
+                margin:0rem 2rem 0rem 2rem;
+               
+              }
+
+                        #hero_text_tag_a_lbl {
+                            font-family: 'Parkisans';
+                            font-size: 3.6rem;
+                        }
+                        #hero_text_tag_b_lbl {
+                            --color-dark-shadow-alpha: rgba(53,53,53,0.5);
+                            font-size: 2rem;
+                        }
+                        #hero_text_tag_c_lbl {
+                            color: var(--gray_1--);
+                            margin-top: 0.5rem;
+                            font-size: 1.2rem;
+                            padding: 0.5rem 0rem 1rem 0rem;
+                            border-bottom: 2px solid gray;
+                        }
+
+                        #hero_text_tag_d_lbl {
+                            margin-top: 1rem;
+                        }
+                        
+                .hero_button{
+                    padding: 0.8rem 3rem;
+                    margin:1rem 2rem;
+                    border: 2px solid gray;
+                    border-radius: var(--border-radius_5--);
+                    cursor: pointer;
+                }
+
+                .hero_button:hover{
+                    background: linear-gradient(45deg,var(--foam-purple-p2-dd),var(--white-in-p2-f6),var(--blue-white));
+                }
+
+
+                        
+
+                 
+            .container.authentication_con{
+            
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1rem;
+                grid-area: 2 / 2 / 2 / 2;
+              
+            }
+
+                .vector_div{
+                    position: relative;
+                    display: grid;
+                
+                    grid-template-columns: repeat(18,1fr);
+                    grid-template-rows: repeat(20,1fr);
+                    width: 100%;
+                    height: 100%;
+                
+                    
+                }
+
+                    .rec_div{
+                    
+                        border-radius: var(--border-radius_10--);
+                        box-shadow: 4px 4px 5px 5px rgba(53,53,53,0.2);
+                    
+                    }
+                        #rd_a{
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            grid-template-rows: 2fr 3fr 5fr;
+                            grid-area: 2 / 3 / 14 / 11 ;
+                            background-color: var(--white-in-p2-f6);
+                        }
+
+                            .rd_a_sections{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin: 0rem 1rem;
+                            }
+                                .rd_a_sections.rd_a_brand_name_div{
+                                
+                                    border-bottom: 1px solid var(--gray_1--);
+                                }   
+                                .rd_a_sections p{
+                                    text-align: center;
+                                }   
+
+                            
+                                    .hl-txt{
+                                    
+                                        font-weight: 700;
+                                        color: var(--carnation-pink-p1-ffa);
+                                    }
+
+
+
+
+
+                        #rd_b{
+                            grid-area: 13 / 2 / 15 / 6  ;
+                            background-color:var(--most-pink-p2-fad);
+                        }
+
+                        .cir_div{
+                            grid-area:  1 / 9 / 4 / 12;
+                            border-radius: var(--border-radius_circle--);
+                            background:radial-gradient(circle at top right,#d0e3ec,#ffc8dd);
+                            
+                        }
+            
+                        .ac_vector_a{
+                        
+                            filter: drop-shadow(3px 3px 5px rgba(53,53,53,0.5));
+                            position: absolute;
+                            top: 8rem;
+                            height: 30rem;
+                            left: 6rem;
+                        
+                    
+                            z-index: 2;
+                        
+                        }
+
+        .container.more{
+          
+            grid-area: 3/  1  / 4/ 3;
+        }
+        .container.footer{ 
+            background-color: var(--moon-phases-a);
+            grid-area: 4/  1  / 4/ 3;
+        }

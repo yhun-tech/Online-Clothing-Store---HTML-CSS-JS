@@ -1,0 +1,484 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="../OCS_Feed_CSS/cart.css">
+    <link rel="icon" href="../../OCS_Images/FLOWER_ICON.png" type="image/png">
+
+
+    <script src="../OCS_Feed_JS/feed.js" async></script>
+
+
+</head>
+            <body>
+
+                <div class="cart_wrapper">
+
+                    <div class="cart_bd_wrapper">
+
+                
+
+                    </div>
+
+                    <div class="front_cart_wrapper">
+
+                        <div class="container fc_header">
+                            
+                            <a href="../OCS_Feed_HTML/feed.html"  class="header_divs logo_div">
+                                <img class="main_logo" src="../../OCS_Images/SHOUJO LOGO 2.png">
+                            </a>
+
+                            <div class="header_divs search_div">
+
+                                <form action="" class="search_form">
+
+                                    <input type="text" class="search_inp" placeholder=" ">
+                                    <label class="search_label">Search</label>
+                                    <svg class="search_div_icon search_icon"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11 2C15.968 2 20 6.032 20 11C20 15.968 15.968 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2ZM11 18C14.8675 18 18 14.8675 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18ZM19.4853 18.0711L22.3137 20.8995L20.8995 22.3137L18.0711 19.4853L19.4853 18.0711Z"></path></svg>
+
+                                </form>
+
+                            </div>
+
+                            <div class="header_divs header_button_div">
+
+                             
+                                <svg class="header_div_icon notif_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22 20H2V18H3V11.0314C3 6.04348 7.02944 2 12 2C16.9706 2 21 6.04348 21 11.0314V18H22V20ZM9.5 21H14.5C14.5 22.3807 13.3807 23.5 12 23.5C10.6193 23.5 9.5 22.3807 9.5 21Z"></path></svg>
+                                <svg class="header_div_icon profile_icon"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13Z"></path></svg>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <div class="container fc_main_cart">
+
+                                    
+
+                            
+
+                            
+                        <!-- MAIN CONTENTS ==================================================================================== -->
+                        <div class="container main_contents" id="db_main_contents_id">
+
+                            <div class="mc_div mc_header">
+
+                                        <div class="mcd_div mcdiv_left">
+
+                                            <span class="mc_header_text" id="mc_header_jstbl_txt">Cart</span>
+                                    
+                                          
+                                        </div>
+                                        
+                                        <div class="mcd_div mcdiv_right">
+                                                                       
+
+                                        </div>
+
+                                     </div>
+
+
+                                     <div class="mc_div mc_content_div">
+
+                                           <div class="mc_table_div">
+            
+                                                <table class="db_js_table">
+
+                                                        <tr class="mc_th_tr" id="mc_th_tr">
+
+                                                              <th class="mc_th th_image">Image</th>
+                                                              <th class="mc_th th_product_name">Product Name</th>
+                                                              <th class="mc_th th_price">Price</th>  
+                                                              <th class="mc_th th_quantity">Quantity</th>    
+                                                              <th class="mc_th th_action">Action</th>                                        
+                                                                                                    
+                                                        </tr>
+
+                                                            
+
+                                                        <div class="cart_items">
+
+
+                                                                        <!-- DATA -->
+                                                                <tr class="mc_data_tr">
+
+
+                                                                    <td class="mc_tb_data td_output_js_product_image"> 
+                                                                    
+                                                                        <img width="90" class="product_images"  id="productImage" src="../../OCS_Images/CLOTHES/SHIRT 2.png" alt="Product">
+        
+                                                                    </td>
+
+                                                                    
+                                                                    <td class="mc_tb_data td_output_js_product_name">  
+
+                                                                        <p id="productName">Black Shoujo Alternative Sleeve</p>
+                                                                        
+                                                                    </td>
+
+
+                                                                    <td class="mc_tb_data td_output_js_price">
+
+                                                                        ₱<span class="cart-price"  id="productPrice">1599</span>
+
+                                                                    </td>
+                                            
+                                                    
+                                                                    <td class="mc_tb_data td_output_js_quantity">
+                                                                        <div class="tba_button_div cart-controls">
+
+                                                                            <input type="number" class="cart-quantity"  id="productQuantity" value="2"></input>
+                                                                          
+                                                                        
+                                                                            <button class="mc_tb_btn remove-button">Remove</button> 
+                                                                            
+                                                                        
+                                                                        </div>
+                                                                    </td>
+
+
+                                                                    <td class="mc_tb_data td_output_js_action">
+                                                                        <div class="tba_button_div cart-controls cart-actions">
+    
+                                                                            <input type="checkbox">
+                                                                        
+                                                                        </div>
+                                                                    </td>
+
+
+
+
+                                                                </tr>
+
+                                                                <!-- END OF DATA -->
+
+
+                                                                <!-- BAG DATA || Beige Vintage Shoulder Bag  -->
+                                                                <tr class="mc_data_tr">
+
+
+                                                                        <div class="product_cart">
+
+                                                                            <td class="mc_tb_data td_output_js_product_image"> 
+                                                                        
+                                                                                <img width="80" class="product_images"    id="productImage" src="../../OCS_Images/RAW CLOTHES/BAG 2.PNG" alt="Product">
+    
+                                                                            </td>
+    
+                                                                            
+                                                                            <td class="mc_tb_data td_output_js_product_name">  
+    
+                                                                                <p id="productName">Beige Vintage Shoulder Bag</p>
+                                                                                
+                                                                            </td>
+    
+    
+                                                                            <td class="mc_tb_data td_output_js_price">
+    
+                                                                                ₱<span class="cart-price"  id="productPrice">999</span>
+    
+                                                                            </td>
+
+
+
+                                                                        </div>
+                                                                       
+
+                                                                        <td class="mc_tb_data td_output_js_quantity">
+                                                                            <div class="tba_button_div cart-controls">
+                                                                              
+                                                                                <input type="number" class="cart-quantity" id="productQuantity" value="1"></input>
+                                                                   
+                                                                                <button class="mc_tb_btn remove-button">Remove</button> 
+                                                                                
+                                                                            
+                                                                            </div>
+                                                                        </td>
+
+
+
+                                                                        <td class="mc_tb_data td_output_js_action">
+                                                                            <div class="tba_button_div cart-controls cart-actions">
+        
+                                                                                <input type="checkbox">
+                                                                            
+                                                                            </div>
+                                                                        </td>
+
+                                                                    </tr>
+
+
+                                                            <!-- BAG DATA ||    White Ribbon Young Tender Tops  -->
+                                                            <tr class="mc_data_tr">
+
+
+                                                                <div class="product_cart">
+
+                                                                    <td class="mc_tb_data td_output_js_product_image"> 
+                                                                
+                                                                        <img width="80" class="product_images"    id="productImage" src="../../OCS_Images/RAW CLOTHES/T7.PNG" alt="Product">
+
+                                                                    </td>
+
+                                                                    
+                                                                    <td class="mc_tb_data td_output_js_product_name">  
+
+                                                                        <p id="productName">
+                                                                            White Ribbon Young Tender Tops</p>
+                                                                        
+                                                                    </td>
+
+
+                                                                    <td class="mc_tb_data td_output_js_price">
+
+                                                                        ₱<span class="cart-price"  id="productPrice">999</span>
+
+                                                                    </td>
+
+
+
+                                                                </div>
+                                                            
+
+                                                                <td class="mc_tb_data td_output_js_quantity">
+                                                                    <div class="tba_button_div cart-controls">
+
+                                                                    
+                                                                        <input type="number" class="cart-quantity" id="productQuantity" value="1"></input>
+                                                        
+                                                                        <button class="mc_tb_btn remove-button">Remove</button> 
+                                                                        
+                                                                    
+                                                                    </div>
+                                                                </td>
+
+
+                                                                <td class="mc_tb_data td_output_js_action">
+                                                                    <div class="tba_button_div cart-controls cart-actions">
+
+                                                                        <input type="checkbox">
+                                                                    
+                                                                    </div>
+                                                                </td>
+
+                                                            </tr>
+
+
+
+                                                              <!-- BAG DATA ||    Pink School Girl Mini-Skirt -->
+                                                              <tr class="mc_data_tr">
+
+
+                                                                <div class="product_cart">
+
+                                                                    <td class="mc_tb_data td_output_js_product_image"> 
+                                                                
+                                                                        <img width="80" class="product_images"    id="productImage" src="../../OCS_Images/RAW CLOTHES/SK1_.PNG" alt="Product">
+
+                                                                    </td>
+
+                                                                    
+                                                                    <td class="mc_tb_data td_output_js_product_name">  
+
+                                                                        <p id="productName">
+                                                                            Pink School Girl Mini-Skirt</p>
+                                                                        
+                                                                    </td>
+
+
+                                                                    <td class="mc_tb_data td_output_js_price">
+
+                                                                        ₱<span class="cart-price"  id="productPrice">410</span>
+
+                                                                    </td>
+
+
+
+                                                                </div>
+                                                            
+
+                                                                <td class="mc_tb_data td_output_js_quantity">
+                                                                    <div class="tba_button_div cart-controls">
+
+                                                                    
+                                                                        <input type="number" class="cart-quantity" id="productQuantity" value="3"></input>
+                                                        
+                                                                        <button class="mc_tb_btn remove-button">Remove</button> 
+                                                                        
+                                                                    
+                                                                    </div>
+                                                                </td>
+
+                                                                <td class="mc_tb_data td_output_js_action">
+                                                                    <div class="tba_button_div cart-controls cart-actions">
+
+                                                                        <input type="checkbox">
+                                                                    
+                                                                    </div>
+                                                                </td>
+
+                                                            </tr>
+
+
+
+                                                            
+                                                              <!-- BAG DATA ||    Pink School Girl Mini-Skirt -->
+                                                              <tr class="mc_data_tr">
+
+
+                                                                <div class="product_cart">
+
+                                                                    <td class="mc_tb_data td_output_js_product_image"> 
+                                                                
+                                                                        <img width="80" class="product_images"    id="productImage" src="../../OCS_Images/RAW CLOTHES/T8.PNG" alt="Product">
+
+                                                                    </td>
+
+                                                                    
+                                                                    <td class="mc_tb_data td_output_js_product_name">  
+
+                                                                        <p id="productName">
+                                                                            Slim Winter Longsleeve Sweater</p>
+                                                                        
+                                                                    </td>
+
+
+                                                                    <td class="mc_tb_data td_output_js_price">
+
+                                                                        ₱<span class="cart-price"  id="productPrice">2509</span>
+
+                                                                    </td>
+
+
+
+                                                                </div>
+                                                            
+
+                                                                <td class="mc_tb_data td_output_js_quantity">
+                                                                    <div class="tba_button_div cart-controls">
+
+                                                                    
+                                                                        <input type="number" class="cart-quantity" id="productQuantity" value="1"></input>
+                                                        
+                                                                        <button class="mc_tb_btn remove-button">Remove</button> 
+                                                                        
+                                                                    
+                                                                    </div>
+                                                                </td>
+
+
+
+                                                                <td class="mc_tb_data td_output_js_action">
+                                                                    <div class="tba_button_div cart-controls cart-actions">
+
+                                                                        <input type="checkbox" >
+                                                                    
+                                                                    </div>
+                                                                </td>
+
+                                                            </tr>
+
+
+
+                                                                                                
+
+                                                                                         
+                                                                             
+
+
+
+                                                                                                
+
+                                                                                         
+                                                                             
+
+                                                                                    
+
+
+
+
+                                                        </div>
+                                                        
+                                                       
+
+                                        </table>                                                            
+                                                        
+
+
+                                    </div>
+
+
+
+                        
+                            </div>
+
+
+
+
+
+
+                        </div>
+                        <!-- END MAIN CONTENTS ==================================================================================== -->
+
+
+
+                        </div>
+
+                        
+                         <div class="container submit_div">
+
+                            <div class="total_div">
+                                <span class="total-lbl">Total:</span>
+                                <span class="cart-total">₱<span>0</span></span>
+
+                            </div>
+                       
+
+
+                            <div class="buy_button_div">
+
+                                <button class="buy-now-quan-button">Buy Now</button> 
+    
+                            </div>
+     
+    
+
+                        </div>
+
+
+                     
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+                
+            </body>
+
+
+
+</html>
+
+

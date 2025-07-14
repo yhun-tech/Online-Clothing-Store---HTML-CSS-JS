@@ -1,0 +1,1344 @@
+:root{
+
+    /* WHITES */
+--pure_white-ff: #fff;
+--main-white-ed:#ede8f5;
+
+--gray_1--:gray;
+--color-jk-dark:#212A31;
+--color-jk-dgray:#f6fbff;
+--blue-white:#d0e3ec;
+
+--color-dark-variant: #2c2f31;
+--color-dark-shadow: rgb(53,53,53);
+--color-dark-shadow-alpha: rgba(53,53,53,0.5);
+--color-dark-blue:#1f2833;
+
+   /* LUSION */
+--lusion-dark-a:#141619;
+--lusion-dark-b:#2c2e3a;
+
+   /* MOON PHASES */
+--moon-phases-a:#212a31;
+--moon-phases-b:#2e3944;
+--moon-phases-c:#748d92;
+
+   /* HELLO */
+--hello-a:#0b0c10;
+--hello-b:#000428;
+
+
+   /* ISOLATED BLUE */
+--isolated-blue:#274d60;
+--isolated-orange:#f1916d;
+
+    
+    /* PALLETE 1 */
+    --thistle-p1-cd:#cdb4db;
+    --fairy-tale-p1-ffc:#ffc8dd;
+    --carnation-pink-p1-ffa:#ffafcc;
+    --uranian-blue-p1-bd:#bd30fe;
+    --light-sky-blue-p1-a2:#a2d2ff;
+
+    /* PALLETE 2 */
+    --fairy-green-p2-c6:#c6fad2;
+    --foam-purple-p2-dd:#dd9bcf;
+    --white-in-p2-f6:#f6ffee;
+    --danger-in-p2-f4:#f48882;
+    --most-pink-p2-fad:#fad2cc;
+
+    /* DARK PALLETE */
+
+    --dark-blue-drk-p3-0d:#0d1e4c;
+    --dark-blue-b-drk-p3-0b:#0b1b32;
+    --mid-dark-bluue-drk-p3-26:#264143;
+
+
+      /* SIGNS */
+--color-danger: #ff7782;
+--color-success_a: #41f153;
+--color-success_b: #64e4b9;
+--color-warning: #ffbb55;
+
+
+
+    /* BORDER RADIUS */
+    --border-radius_5--:5px;
+    --border-radius_8--:8px;
+    --border-radius_10--:10px;
+    --border-radius_15--:15px;
+    --border-radius_20--:20px;
+    --border-radius_30--:30px;
+
+    --border-radius_circle--:50%;
+
+
+
+}
+
+
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('../../Fonts/Fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: 'Parkisans';
+    src: url('../../Fonts/Fonts/Parkinsans/static/Parkinsans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Dancing-Medium';
+    src: url('../../Fonts/Fonts/Dancing_Script/static/DancingScript-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../Fonts/Fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../../Fonts/Fonts/Poppins/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../Fonts/Fonts/Montserrat/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../../Fonts/Fonts/Montserrat/Montserrat-Medium.ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../Fonts/Fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('../../Fonts/Fonts/Raleway/static/Raleway-Regular.ttf');
+}
+
+
+
+
+
+
+
+
+
+*{
+    font-family: 'Parkisans';
+
+    margin: 0;
+    padding: 0;
+}
+
+span{
+    color: var(--moon-phases-b);
+    text-align: center;
+    word-break: break-all;
+}
+p{
+    text-align: center;
+    word-break: break-all;
+}
+
+svg{
+
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: var(--moon-phases-c);
+
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;  
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    margin-block: 1rem;
+    background:linear-gradient(to bottom,var(--white-in-p2-f6),var(--blue-white));
+}
+
+body::-webkit-scrollbar-thumb{
+    border-radius: 100vw;
+    border: 4px solid var(--white-in-p2-f6);
+    background-color: var(--moon-phases-b);
+}
+
+
+.feed_wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 9vh 91vh 100vh;
+
+
+    height: 100vh;
+    width: 100%;
+    background-color: var(--white-in-p2-f6);
+}
+
+    .feed_bd_wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 9vh 91vh 100vh;
+    
+        grid-area: 1 / 1 / 4 /2;
+        height: 100%;
+        width: 100%;
+        background:linear-gradient(to bottom,var(--white-in-p2-f6),var(--blue-white));
+        
+    
+    }
+
+    .front_feed_wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 9vh 91vh 100vh;
+    
+        grid-area: 1 / 1 / 2 /2;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* HEADER ===================   ===================   ===================   ===================   =================== */
+    .front_feed_wrapper .ff_header{
+            height: 100%;
+            grid-area: 1/ 1/ 1/ 1;
+        }
+
+        .header_divs{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ff_header{
+            display: grid;
+            grid-template-columns: 2fr 6fr 2fr;
+            grid-template-rows: 1fr;
+        }
+
+            .ff_header .logo_div{
+
+                display: flex;
+                align-items: center;
+                justify-content: start;
+
+            }
+            .ff_header .logo_div .feed_logo{
+                width: 6rem;
+                margin-left: 2rem;
+
+            }
+
+
+
+            .ff_header .search_div{
+            
+            
+            }
+                .search_form{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    width: 40%; 
+                }
+
+                    .search_label{
+                        left: 0.5rem;
+                        position: absolute;
+                        font-size: 0.9rem;
+                        color: var(--gray_1--);
+                        pointer-events: none;
+                        padding: 0rem 0.5rem;
+                        background-color: var(--white-in-p2-f6);
+                    }
+                    .search_inp{
+                        height: 40%;
+                        width: 100%;
+                        outline: none;
+                        border: 2px solid var(--blue-white);
+                        border-radius: var(--border-radius_5--);
+                        padding: 0.1rem 0.3rem;
+                        background-color: transparent;
+                    }
+                
+                .search_form .search_inp:focus  + .search_label,
+                .search_form .search_inp:not(:placeholder-shown) + .search_label{
+                    transform: translateY(-15px);
+                    transition: 0.5s;
+                    font-size: 0.7rem;
+                }
+
+                
+
+                .search_icon{
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    padding: 0.3rem 0.5rem;
+                    border-radius: var(--border-radius_5--);
+                    cursor: pointer;
+                    margin-left: 0.2rem;
+                    fill: var(--moon-phases-c);
+                    background-color: var(--most-pink-p2-fad);
+                }
+                    .search_icon:hover{
+                        background:linear-gradient(45deg,var(--most-pink-p2-fad),var(--main-white-ed));
+                    }
+    
+                
+
+
+
+                    
+            .ff_header .header_button_div{
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                flex-direction: row-reverse;
+                
+                height: 100%;
+            }   
+
+
+            .ff_header .header_button_div a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }   
+            
+                .header_div_icon{
+                    cursor: pointer;
+                    margin-right: 2rem;
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    fill: var(--moon-phases-c);
+                }
+                .header_div_icon:hover{
+                    fill: var(--moon-phases-b);
+                }
+                    .notif_icon{
+                        width: 1.1rem;
+                        height: 1.1rem;
+                    }
+            
+                    
+
+
+
+
+
+
+                    
+
+
+                    
+
+    .front_feed_wrapper .ff_main_feed{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+
+        grid-area: 2 /1 / 2 /1;
+    }
+
+
+       .ff_main_feed  .feeds_randoms{
+
+            display: grid;
+            grid-template-columns: 2fr 6fr 2fr;
+            grid-template-rows: 1fr 6fr 2fr ;
+            gap: 1rem;
+        
+            width: 100%;
+            height: 90%;
+            background-color: transparent;
+            background-position-x: var(--border-radius_circle--);
+          
+            overflow: hidden;
+         
+
+        }
+
+            .feed_div{
+                margin: 0 4rem;
+            }
+    
+
+           .feed_div.discount_cat_div{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+
+                
+                grid-area: 1/ 1/ 1 /4;
+                background-color: var(--white-in-p2-f6);
+                border-radius: var(--border-radius_10--);
+                box-shadow: 3px 10px 5px 1px rgba(53,53,53,0.1);
+               
+            }
+            
+
+                .discount_div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0.2rem;
+
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: var(--moon-phases-b);
+                }
+
+
+                        .get_offer_div{                            
+                     
+                            border-right: 1px solid var(--moon-phases-c);
+                          
+                        }
+                        .get_offer_text_div{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                           
+                           
+                    
+                        }
+                        .get_offer_text_div :nth-child(1){
+                            font-size: 1.1rem;
+                        }
+
+                    .get_offer_div span{
+                        margin-left: 0.5rem;
+                    }
+
+
+                        .flash_sales_div{
+                            margin: 0.2rem;
+                            border-right: 1px solid var(--moon-phases-c);
+                        }
+
+
+                        .flash_sales_div span{
+                            margin-left: 0.5rem;
+                        }
+
+
+
+
+
+
+
+
+
+
+
+        
+
+                .feed_div.market_product_div{
+                    display: grid;
+                    grid-template-columns: 2.5fr 5fr 2.5fr;
+                    grid-template-rows: 1fr;
+                    overflow: hidden;
+                    
+                    grid-area: 2/ 1/ 3 /4;
+                    column-gap: 1rem;
+                   
+                    border-radius: var(--border-radius_10--);
+                  
+                    padding: 0.4rem 0.3rem 0.4rem 0rem; 
+                  
+                }
+
+              
+
+                    .app_recom_div{
+                        display: grid;
+                        grid-template-columns:1fr;
+                        grid-template-rows: 3fr 4fr 3fr;
+                      
+                        background-color: var(--white-in-p2-f6);
+                        border-radius: var(--border-radius_10--);
+                        box-shadow: 3px 5px 3px 1px rgba(53,53,53,0.1);
+                        overflow: hidden;
+                
+                    }
+                        .recom_div_a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;    
+                            flex-direction: column;
+                         
+                        }
+                        .recom_div_b {
+                            display: grid;
+                            grid-template-columns: repeat(10, 1fr);
+                            grid-template-rows: repeat(3, 1fr); 
+                            gap: 0.2rem;
+                        }
+                        
+                        .typograpgy_handler {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: var(--border-radius_5--);
+                            box-shadow: 1px 1px 3px 1px rgba(53, 53, 53, 0.1);
+                        }
+                        
+                        .th1 {
+                            grid-area: 1 / 1 / 2 / 3;    
+                            box-shadow: none;
+                        }
+                            .th1 span {
+                                font-size: 0.8rem;
+                                color: var(--moon-phases-c);
+                            }
+
+
+                        .th2 {
+                            grid-area: 1 / 3 / 2 / 6;  
+                        }
+                            .th2 span{
+                                font-size: 0.9rem;
+                                color: var(--color-dark-shadow-alpha);
+                            }
+
+
+                        .th3 {
+                            grid-area: 1 / 6 / 2 / 8;
+                            box-shadow: 0px 0px 1px 1px rgba(128, 128, 128,0.1);                    
+                        }
+                            .th3 span {
+                                color: var(--gray_1--);
+                            }
+
+
+
+                        .th4 {
+                            grid-area: 1 / 8 / 3 / 8;     
+                            flex-direction: column; 
+                            font-size: 0.9rem;
+                            font-family: 'Poppins-Medium';                       
+                        }
+                            .th4 span{
+                                color: gray;
+                                line-height: 1rem;
+                            }
+
+
+
+
+
+                        .th5 {
+                            grid-area: 1 / 9 / 2 / 11;    
+                            box-shadow: none;  
+                        }
+                            .th5 span{
+                                font-size: 0.8rem;
+                                color: var(--moon-phases-c);
+                            }
+
+                        
+                        .th6 {
+                            grid-area: 2 / 1 / 4 / 1;      
+                            box-shadow: none;
+                            flex-direction: column;        
+                        }
+                            .th6 span{
+                                line-height: 0.8rem;
+                                font-size: 0.7rem;
+                                color: var(--moon-phases-c);
+                                font-family: 'Montserrat';
+                                font-variant:small-caps;
+                            }
+
+
+
+
+
+                        /* middle= == == = = = = == = == = = = = */
+                        .th7 {
+                            grid-area: 2 / 4 / 3 / 8; 
+                        }
+                            .th7 p{
+                                font-family: 'Poppins-Medium';
+                            }
+                                .th7 .o_hl{
+                                    color: var(--carnation-pink-p1-ffa);                   
+                                }
+
+
+                        .th8 {
+                            grid-area: 2 / 9 / 2  / 11;                
+                        }                       
+                            .th8 span{
+                                font-size: 0.8rem;
+                                color: var(--moon-phases-c);   
+                                font-family: 'Raleway';                 
+                            }                       
+                         
+
+
+
+
+                        .th9 {
+                            grid-area: 2 / 2 / 2  / 4;
+                            box-shadow: 0px 1px 1px 1px rgba(128, 128, 128,0.1);                    
+                        }
+                            .th9 span {
+                            font-size: 0.9rem;
+                            color: var(--moon-phases-c);   
+                            font-family: 'Montserrat';                  
+                            }
+
+
+
+                        .th10 {
+                            grid-area: 3 / 2 / 3  / 4;
+                            box-shadow: none;
+                        }           
+                            .th10 span {
+                            font-size: 0.9rem;
+                            font-family: 'Roboto';
+                            letter-spacing: 1px;
+                            color: var(--gray_1--);
+                            }
+
+
+
+                        .th11 {
+                            grid-area: 3 / 4 / 3  / 7;                  
+                        }
+                            .th11 span {
+                                color: var(--moon-phases-c);  
+                                font-size: 0.9rem;                            
+                            }
+                            
+                        .th12 {
+                            grid-area: 3 / 7 / 3  / 11;
+                            box-shadow: none;                           
+                        }                  
+                            .th12 span {
+                                font-size: 0.9rem;
+                                color: var(--moon-phases-c);
+                            }
+                                
+                             
+                                                
+
+
+
+
+
+                            
+                        .recom_div_c{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+                                z-index: 1;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin: 0.4rem;
+                                border-radius: var(--border-radius_10--);
+                                background-color: var(--moon-phases-c);
+                            }
+                            
+
+                            .recom_div_c_text.text_a{
+                                color: var(--pure_white-ff);
+                            }
+                            .recom_div_c_text.text_b{
+                                font-size: 2rem;
+                                    margin-right: 0rem;
+                                    background: linear-gradient(90deg, #f8f5f6, #ff758c);
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                            }
+                            .recom_div_c_text.text_c{
+                                font-family: 'Poppins';
+                                font-size: 1rem;
+                                margin-left: 0.3rem;
+                                color:var(--pure_white-ff);
+                            }
+                        
+
+
+
+
+
+
+                        .randoms_recom_div{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+                        
+                        }
+                            .recom_div_set{
+                                position: relative;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: var(--border-radius_15--);
+                
+                                max-width: 100%;
+                            
+                                overflow: hidden;
+                                box-shadow: 3px 5px 3px 1px rgba(53,53,53,0.1)
+            
+                            }
+                                .recom_div_slider_wrapper{
+                                    display: flex;
+                                    align-items: center;
+                                    height: 100%;
+                                    transition: transform 0.3s ease-in-out;
+                                    width: 100%;
+                                
+                                }
+
+                                    /* mc */
+                                    .random_div_image_section {
+                                        min-width: 100%; 
+                                        height: 100%;
+                                        text-align: center;
+                                        border-radius: 10px;                                     
+                                    }.rimsa{
+                                        position: relative;
+                                        display: grid;
+                                        grid-template-columns: repeat(20,1fr);
+                                        grid-template-rows: repeat(4,1fr);
+                                        overflow: hidden;
+                                    }
+                                        .rimsa img{
+                                            bottom: 0rem;
+                                            left: 2rem;
+                                            filter: drop-shadow(1px 3px 3px rgba(53,53,53,0.5));
+                                            position: absolute;
+                                            z-index: 1;
+                                        }
+                                            .rimsa span{
+                                                position: absolute;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                            }                      
+                                                                           
+                                                .rimsa .rimsa_text_ta{
+                                                        top: 2rem;
+                                                        left: 2rem;
+                                                        padding: 0.5rem;
+                                                        font-size: 1.6rem;
+                                                        border-radius: var(--border-radius_15--);
+                                                        background-color: var(--white-in-p2-f6);
+                                                        font-family: 'Poppins-Medium';
+                                                        color: var(--moon-phases-c);
+                                                    }                 
+                                                .rimsa .rimsa_text_tb{
+                                                    top: 5rem;
+                                                    left: 1rem;
+                                                    margin: 0rem 2rem;
+                                                    font-size: 5rem;
+                                                    border-radius: var(--border-radius_10--);       
+                                                    color: var(--moon-phases-b);
+                                                }
+                                                .rimsa .rimsa_text_tc{
+                                                    top: 11rem;
+                                                    left: 16rem;
+                                                    
+                                                    margin: 0rem 2rem;
+                                                    font-family: 'Montserrat';
+                                                    border-radius: var(--border-radius_10--);           
+                                                }
+                                                            
+                                                .rimsa_text_td{
+                                                    top: 12.5rem;
+                                                    left: 21rem;
+                                                    font-size: 1.6rem;
+                                                    margin: 0rem 2rem;
+                                                    font-family: 'Poppins-Medium';
+                                                    color: var(--moon-phases-c);
+                                                    background-color: var(--white-in-p2-f6);
+                                                    padding: 0.5rem;
+                                                    z-index: 1;
+                                                    border-radius: var(--border-radius_10--); 
+                                                }
+
+
+                                                    .pies{
+                                                        position: absolute;
+                                                    }
+                                                    .bdpies_a{
+                                                        bottom: -0.4rem;
+                                                        right: -0.4rem;
+                                                        width: 6rem;
+                                                        height: 6rem;
+                                                        border-radius: var(--border-radius_circle--);
+                                                       
+                                                    }
+
+                                                    .pies_a{
+                                                       
+                                                        bottom: -2rem;
+                                                        right: -2rem;
+                                                        width: 6rem;
+                                                        height: 6rem;
+                                                        border-radius: var(--border-radius_circle--);
+                                                    
+                                                        border: 1rem solid var(--main-white-ed);
+                                                    }
+
+                                                    .pies_b{
+                                                        top: 5.3rem;
+                                                        left: 2rem;
+                                                        width: 2rem;
+                                                        height: 2rem;
+                                                        border-radius: var(--border-radius_circle--);
+                                                        background-color: transparent;
+                                                        border: 0.5rem solid var(--main-white-ed);  
+                                                    }
+
+
+
+
+
+
+                                    /* buttons */
+                                    .recoms_slider_nav{
+                                        position: absolute;
+                                        top: 44%;
+                                        display: flex;
+                                        justify-content: center; 
+                                        width: 100%;
+                                    }
+                                        .recoms-nav-button{
+                                                border: none;
+                                                color: white;
+                                                padding: 0.2rem 0.5rem;
+                                                border-radius: 5px;
+                                                cursor: pointer;
+                                                opacity: 0.8;
+                                                transition: opacity 0.2s;
+                                                background-color: var(--moon-phases-b);
+                                        }
+
+                                                                    
+                                        .recoms-nav-button:hover {
+                                            opacity: 1;
+                                        }
+                                        .recoms-nav-button:disabled {
+                                            opacity: 0.5;
+                                            cursor: not-allowed;
+                                        }
+
+
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+                        .top_trends_div{
+                            display: grid;
+                            grid-template-columns: 4.5fr 1fr 4.5fr;
+                            grid-template-rows: 1fr 4fr 1fr 4fr;
+                            background-color: var(--white-in-p2-f6);
+                        }
+             
+
+                            .top_trends_image_div{
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                box-shadow: 3px 5px 3px 1px rgba(53,53,53,0.1);
+                                cursor: pointer;
+                                overflow: hidden;
+                                border-radius: var(--border-radius_8--);
+
+                            }
+                               
+
+                            .top_trends_image_div:hover{
+                                box-shadow: 1px 1px 5px 1px rgba(53,53,53,0.5);
+                                transition: 0.3s;
+                                }
+
+
+
+                                .top_trends_div .ttid_a{
+                                    grid-area: 2 / 1 / 3/ 3;
+                                 
+                                }
+                                            
+                                .top_trends_div .ttid_b{
+                                    grid-area: 2 / 3 / 4 / 3;
+                                   
+                                }
+
+                                .top_trends_div .ttid_c{
+                                    grid-area: 4 / 2 / 5 / 4;
+                                 
+                                }
+
+                                .top_trends_div .ttid_d{
+                                    grid-area: 3 / 1 / 5 / 2;
+                                  
+                                }
+
+                                .top_trends_div .ttid_e{
+                                    grid-area: 1 / 1 / 1 / 4;
+                                   box-shadow: none; 
+                                }
+                                .top_trends_div .ttid_f{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    box-shadow: none
+                                }
+
+                                
+                                    .top_trends_div .ttid_e span{
+                                        font-size: 1.2rem;
+                                        color: var(--moon-phases-c);
+                                    }
+
+
+
+                                    .product_button_div{
+                                        position: absolute;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        bottom: -0.1rem;
+                                        height: 20%;
+                                        width: 100%;
+                                       overflow: hidden;
+                                    
+                                    }
+
+                            
+                                    .product_button_div *{
+                                        margin: -0.1rem 0.4rem 0rem 0rem;
+                                    }
+
+                                 
+
+                                    .product_button_div span{
+                                        padding: 0rem 0.2rem;
+                                        border-bottom-left-radius: var(--border-radius_8--);
+                                        border-top-right-radius: var(--border-radius_8--);
+                                        background-color: var(--main-white-ed);
+                                    }
+
+
+                                    .product_button_div span:hover{
+                                        transition: 0.2s;
+                                        color: var(--moon-phases-b);   
+                                        background-color: var(--foam-purple-p2-dd);
+                                    }
+
+
+                                    .product_button_div .cart_icon{
+                                        fill: var(--moon-phases-c);
+                                       
+                                    }
+                                   
+
+
+                                    .product_cart:hover{
+                                        transition: 0.2s;
+                                        fill: var(--moon-phases-b);
+                                    }
+
+
+
+
+
+
+
+
+
+
+             .product_category_div{
+                   
+                    display: grid;
+                    grid-template-columns: 2fr 6fr 2fr;
+                    grid-template-rows: 1fr;
+                    margin-bottom: 1rem;
+                    grid-area: 3/ 1/ 3 /4;
+                    border-radius: var(--border-radius_10--);
+                    background-color:var(--white-in-p2-f6);
+                    box-shadow: 3px 5px 3px 1px rgba(53,53,53,0.1);
+                   
+                }
+
+                     .product_category_div .category_divs{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0.5rem;
+                        cursor:pointer;
+                        color: var(--moon-phases-b);
+                        text-decoration: none;
+                    }
+
+                    
+                        .bags_cat_div{
+                            border-right: 1px solid var(--moon-phases-c);
+                        }
+                        .tops_cat_div{
+                            border-right: 1px solid var(--moon-phases-c);
+                        }                        
+                        .product_category_div .category_divs span:hover{
+                            color: var(--moon-phases-b);
+                        }
+                
+             
+
+
+
+
+
+
+
+
+
+
+
+
+    .front_feed_wrapper .ff_sells_feed{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+
+            /* SELLS SET A */
+            .sells_set_a{
+                position: relative;
+                width: 90%;
+                height: 90%;
+                border-radius: var(--border-radius_15--);
+
+                max-width: 90%;
+                margin: 2rem auto;
+                overflow: hidden;
+                background-color: var(--blue-white);
+                box-shadow: 3px 10px 5px 1px rgba(53,53,53,0.1);
+           
+            }
+
+            .seta_slider_wrapper {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                transition: transform 0.3s ease-in-out;
+                width: 100%;
+            }
+
+            .seta_image_sections {
+                min-width: 100%; 
+                height: 100%;
+                text-align: center;
+                background-color: #e3f2fd;              
+                border-radius: 10px;
+            }
+
+
+                
+                        #seta_section_1{
+                            display: grid;
+                            grid-template-columns: repeat(10,1fr);
+                            grid-template-rows: 1fr 1fr;
+                            width: 100%;
+                            height: 100%;
+                            gap: 1rem;
+            
+                        }
+
+
+
+
+                         /* SET A */
+                        .set_a_images_div{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: var(--border-radius_10--);
+
+                        }
+
+                        .set_a_images_div:hover{
+                        box-shadow: 1px 1px 5px 1px rgba(53,53,53,0.5);
+                        }
+                        .model_image_div_a{  
+                        
+                            display: grid;
+                            grid-template-columns:  repeat(6,1fr);
+                            grid-template-rows: repeat(10,1fr);
+                            grid-area: 1/ 1/ 3 / 5;
+                            margin: 1rem 0rem 1rem 1rem;
+                            border:5px solid var(--main-white-ed);
+                            border-radius: var(--border-radius_10--);
+                            background-color: var(--uranian-blue-p1-bd);
+                            
+                        }   
+
+                            .model_image_div_a_text_div_b{
+
+                                display: flex;
+                                align-items: end;
+                                justify-content: center;
+
+                                z-index: 1;
+                                width: 100%;
+                                height: 100%;
+                                grid-area: 5 / 2/7/ 6;
+                                color: var(--pure_white-ff);
+
+                            }
+
+
+                            .model_image_div_a_text_div{
+                                cursor: pointer;
+                                z-index: 1;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                width: 100%;
+                                height: 80%;
+                                grid-area: 7 / 2/9/ 6;
+                                border-radius: var(--border-radius_10--);
+                                background:linear-gradient(to right,var(--light-sky-blue-p1-a2),var(--most-pink-p2-fad));
+                            }
+
+                            .text_c{
+                                font-size: 1.5rem;
+                                font-family: 'Dancing-Medium';
+                                color: var(--pure_white-ff);
+                            }
+
+                                .model_image_text{
+                                    filter: drop-shadow(1px 1px 1px rgba(53,53,53,0.3));   
+                                }
+
+                                .model_image_text.text_a{
+                                    color: var(--pure_white-ff);
+                                    font-size: 1.2rem;
+                                    margin-right: 1rem;
+                                }
+
+                                .model_image_text.text_b{
+                                    font-size: 4rem;
+                                    margin-right: 1rem;
+                                    background: linear-gradient(90deg, #f8f5f6, #ff758c); /* Example gradient colors */
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                }
+                                
+                                .model_image_text.hl_text_a{
+                                
+                                    font-size: 1.2rem;
+                                    -webkit-text-fill-color: var(--pure_white-ff);
+                                }
+
+                                
+
+                            #set_a_model_image_a {
+                            grid-area: 1/ 1 / 11/ 7;
+                            height: 100%;
+                            width: 100%; 
+                            object-fit: cover; 
+                        
+                            border-radius: 5px;
+                        }
+
+
+
+                        /* recommnendation a*/
+                        .recomc_diva{
+                            margin: 1rem 0rem 0rem 0rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                    
+                            background-color: var(--most-pink-p2-fad);
+                            grid-area:  1 / 5 / 1 /8;
+                        }       
+
+                        .recomc{
+                        
+                            text-align: center;
+                            border-radius: var(--border-radius_10--);
+                        }
+                            .recomc.clothe_a{
+                                width: 100%;      
+                                max-width: 15rem;  
+                            
+                            }
+
+                        .recomc_divb{
+                            margin:1rem 1rem 0rem 0rem;
+                            background-color: var(--main-white-ed);
+                            grid-area:  1 / 8/ 1 /11;
+                        }
+
+                            .recomc.clothe_b{
+                                width: 100%;       
+                                max-width: 15rem;  
+                            
+                            }
+                            
+                        .recomc_divc{
+                            margin: 0rem 1rem 1rem 0rem;
+                            grid-area: 2 / 7 / 2 / 11;
+                            background-color: var(--thistle-p1-cd);
+                        }
+
+                        .recomc.clothe_c{
+                            width: 100%;       
+                            max-width: 15rem;  
+                        
+                        }
+
+                        /* recommendation d */
+                        .recomc_divd{
+                            
+                            position: relative;
+                            margin: 0rem 0rem 1rem 0rem;
+                            grid-area: 2 / 5 / 2 / 7;
+                        
+                        }   
+                            .clothe_d{
+                               
+                                min-width: 100%; 
+                                height: 100%;
+                                text-align: center;
+                                background-color: #e3f2fd;              
+                                border-radius: 10px;
+                            }
+
+                            .recom_clothed_d_prize_div{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                position: absolute;
+                                bottom: 0;
+                                width: 100%;
+                                height: 10%;
+                            
+                            }
+
+                        
+                            .time_and_prize_div_d{
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                     
+                            }
+
+                            
+                            .time_and_prize_div_d *{
+                            
+                                margin-left: 0.5rem;
+                            }
+
+
+                            .prize_did_text.prize_d_discount{
+                            
+                                position: absolute;
+                                top: 0.5rem;
+                                right: 0.5rem;
+                            }
+                                .prize_d{
+                                    margin-top: 0.1rem;
+                                }
+
+                                .product_cart{
+                                    cursor: pointer;
+                                }
+                                
+                                .time_icons{
+                                    fill: var(--moon-phases-c);
+                                    width: 1rem;
+                                }
+
+                                .prize_d_orig_prize{
+                                    color: var(--moon-phases-c);
+                                    margin-right: 0.5rem;
+                                }
+
+                    
+                    .seta_slider_nav {
+                        position: absolute;
+                        top: 44%;
+                        display: flex;
+                        justify-content: center; 
+                    
+                        width: 100%;
+                    }
+                    
+                    .prev{
+                        position: absolute;
+                        left: 0rem;
+                    }                
+                    .next{
+                        position: absolute;
+                        right: 0rem;
+                    }
+
+
+                    .nava-button {
+                        border: none;
+                        color: white;
+                        padding: 0.2rem 0.5rem;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        opacity: 0.8;
+                        transition: opacity 0.2s;
+                        background-color: var(--moon-phases-b);
+                    }
+                            
+
+            .nava-button:hover {
+                opacity: 1;
+            }
+
+            .nava-button:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+
+
+                    
